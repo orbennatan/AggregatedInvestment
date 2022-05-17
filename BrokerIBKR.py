@@ -1,5 +1,5 @@
 from BrokerBase import BrokerBase
-from IBKR import TestApp, AccountValues as AV
+from IBKR import TestApp, AccountValues
 
 
 class BrokerIBKR(BrokerBase):
@@ -10,7 +10,7 @@ class BrokerIBKR(BrokerBase):
     Key = 'key'
     NetLiquidation = 'NetLiquidation'
     # We don't want to create a dependency between clients of BrokerIBKR and the IBKR module hence the dict translation
-    error_dict = {AV.ErrorTimeOut: BrokerBase.TimeOutError, AV.OK: BrokerBase.OK}
+    error_dict = {AccountValues.ErrorTimeOut: BrokerBase.TimeOutError, AccountValues.OK: BrokerBase.OK}
 
     def __init__(self, conf):
         super().__init__(conf)  # We need this call in order to call the ABC __init__ method

@@ -1,7 +1,7 @@
 # This file contain constants for several categories. Each category is defined as a class
 class ClassConstants:
     AggregatorBase = 'AggregatorBase'
-    AggregatorPercentageParticipants= 'AggregatorPercentageParticipants'
+    AggregatorPercentageParticipants = 'AggregatorPercentageParticipants'
     HelloWorld = 'HelloWorld'
     BrokerBase = 'BrokerBase'
     BrokerIBKR = 'BrokerIBKR'
